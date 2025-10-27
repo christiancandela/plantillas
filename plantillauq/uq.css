@@ -103,7 +103,7 @@ section > * {
 
 /* ======== PORTADA (clase "lead") ======== */
 section.lead {
-  background: url("./fondo.png") no-repeat center center / cover;
+  background: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/fondo.png") no-repeat center center / cover;
   color: #fff;
   text-align: center;
   padding-top: 0;
