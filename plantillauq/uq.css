@@ -167,7 +167,7 @@ section.bicolumns-grid h2 {
 }
 
 
-section.bicolumns-flex {
+section.columns-flex {
   display: flex;
   flex-wrap: wrap;           /* clave: permite que el h2 quede solo en la primera fila */
   flex-direction: row;        /* las columnas se ubican lado a lado */
@@ -177,12 +177,12 @@ section.bicolumns-flex {
 }
 
 /* Asegura que cada columna use la mitad del ancho */
-section.bicolumns-flex > div {
+section.columns-flex > div {
   flex: 1;                    /* las dos columnas crecen igual */
   min-width: 0;               /* evita overflow horizontal */
 }
 
-section.bicolumns-flex > h2 {
+section.columns-flex > h2 {
   flex: 0 0 100%;            /* ocupa toda la fila */
   margin: 0 0 .5em;
   text-align: center;
