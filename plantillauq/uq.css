@@ -8,7 +8,7 @@
 /* Tipografías (opcional: puedes incrustar locales) 
 @font-face {
   font-family: 'Inter';
-  src: url('./fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype'); 
+  src: url('https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype'); 
   font-weight: 100 900;
   font-style: normal;
 }
@@ -45,7 +45,7 @@ section::before {
   left: 0;
   width: 100%;
   height: 138px; /* ajusta según la altura de tu franja */
-  background-image: url("./franjaSuperior.png");
+  background-image: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/franjaSuperior.png");
   background-repeat: no-repeat;
   background-size: contain;    /* <- mantiene proporción */
   background-position: top center;
@@ -59,7 +59,7 @@ section::after {
   height: 78px; /* ajusta según tu franja inferior */
 
   /* Fondo confinado al content box */
-  background: url("./franjaInferior.png") no-repeat bottom right / contain;
+  background: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/franjaInferior.png") no-repeat bottom right / contain;
   background-origin: content-box; /* ← posiciona vs el content box */
   background-clip: content-box;   /* ← pinta solo dentro del content box */
 
@@ -84,7 +84,7 @@ section .after {
   align-items: center;
     
   padding: 0 40px;
-  background-image: url("./franjaInferior.png");
+  background-image: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/franjaInferior.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
