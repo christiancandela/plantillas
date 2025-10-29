@@ -14,6 +14,7 @@ _paginate: false
 
 # Otro elemento
 
+![center small](licencia.png)
 
 ---
 
@@ -21,11 +22,36 @@ _paginate: false
 
 # Prueba
 
+---
+
+<!-- _class: titulo h1-left -->
+
+# Prueba
+
+---
+
+<!-- _class: titulo h1-right -->
+
+# Prueba
 
 ---
 
 <!-- _class: bicolumns -->
-# Comparativa
+# bicolumns
+
+## Titulo 
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+
+---
+
+<!-- _class: bicolumns h2-center -->
+
+# bicolumns h2-center
 
 ## Titulo 
 - una opcion 
@@ -39,7 +65,7 @@ _paginate: false
 ---
 
 <!-- _class: bicolumns-grid -->
-# Comparativa
+# bicolumns-grid 
 
 ## Titulo 
 
@@ -65,8 +91,36 @@ _paginate: false
 
 ---
 
-<!-- _class: bicolumns-flex -->
-# Comparativa
+<!-- _class: bicolumns-grid h2-center -->
+# bicolumns-grid h2-center
+
+## Titulo 
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+---
+
+<!-- _class: columns-flex  -->
+
+# columns-flex
 
 ## prueba 
 
@@ -98,4 +152,58 @@ _paginate: false
 - cuatro opciones
 - cinco opciones
 - etc
+</div>
+
+---
+
+
+
+<!-- _class: columns-flex h2-center -->
+
+# columns-flex h2-center
+
+## prueba 
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+---
+
+<!-- _class: end -->
+
+<div style="position:absolute;  left:565px; top: 540px">
+
+**Arquitectura Orientada a Microservicios**  
+Ingeniería de Sistemas y Computación
+Universidad del Quindío  
+
+![width:80](licencia.png) 2025 [**Christian Andrés Candela Uribe**](mailto:christiancandela@uniquindio.edu.co)
+
 </div>
