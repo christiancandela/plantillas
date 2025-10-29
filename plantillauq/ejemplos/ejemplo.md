@@ -8,13 +8,26 @@ _paginate: false
 
 <!-- _class: lead -->
 
-## Prueba
+# TITULO DE LA PRESENTACIÓN <br/> Subtitulo
+##
+##
+##
+##
+## Arquitectura Basada en Microservicios
+**Área de infraestructura
+Programa de Ingeniería de Sistemas y Computación
+Facultad de Ingeniería**
+
+<div style="position: absolute; left: 93%; top:10px; ">
+
+![width:80](licencia.png)
+</div>
 
 ---
 
 # Otro elemento
 
-![center small](licencia.png)
+![center small](https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/licencia.png)
 
 ---
 
@@ -204,6 +217,6 @@ _paginate: false
 Ingeniería de Sistemas y Computación
 Universidad del Quindío  
 
-![width:80](licencia.png) 2025 [**Christian Andrés Candela Uribe**](mailto:christiancandela@uniquindio.edu.co)
+![width:80](https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/licencia.png) 2025 [**Christian Andrés Candela Uribe**](mailto:christiancandela@uniquindio.edu.co)
 
 </div>

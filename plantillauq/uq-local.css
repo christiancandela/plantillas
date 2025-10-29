@@ -107,9 +107,10 @@ section.lead {
   background: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/fondo.png") no-repeat center center / cover;
   
   /* color: #fff; */
-  text-align: center;
+  text-align: left;
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 370px;
 }
 
 /* Sin franjas en la portada */
@@ -120,9 +121,17 @@ section.lead::after {
 
 /* Estilo de título principal en portada */
 section.lead h1 {
-  font-size: 72px;
-  margin-bottom: 0.4em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  position:absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  left: 550px;
+  top: 130px;
+  width: 730px;
+  height: 150px;
+  font-size: 45px;
 }
 
 /* Subtítulo */
@@ -246,3 +255,5 @@ img[alt~="shadow"] { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 img.shadow { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 img[alt~="rounded"] { border-radius: 15px; }
 img.rounded { border-radius: 15px; }
+
+img[alt~="licencia"], img.licencia { content: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/licencia.png"); }
