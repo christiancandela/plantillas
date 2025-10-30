@@ -49,8 +49,8 @@ Facultad de Ingeniería**
 
 ---
 
-<!-- _class: bicolumns -->
-# bicolumns
+<!-- _class: columns-2 -->
+# columns-2
 
 ## Titulo 
 - una opcion 
@@ -62,9 +62,9 @@ Facultad de Ingeniería**
 
 ---
 
-<!-- _class: bicolumns h2-center -->
+<!-- _class: columns-2 h2-center -->
 
-# bicolumns h2-center
+# columns-2 h2-center
 
 ## Titulo 
 - una opcion 
@@ -77,8 +77,8 @@ Facultad de Ingeniería**
 
 ---
 
-<!-- _class: bicolumns-grid -->
-# bicolumns-grid 
+<!-- _class: columns-2-grid -->
+# columns-2-grid 
 
 ## Titulo 
 
@@ -104,10 +104,235 @@ Facultad de Ingeniería**
 
 ---
 
-<!-- _class: bicolumns-grid h2-center -->
-# bicolumns-grid h2-center
+<!-- _class: columns-2-grid h2-center -->
+# columns-2-grid h2-center
 
 ## Titulo 
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+---
+
+<!-- _class: columns-3 -->
+# columns-3
+
+## Titulo 
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+
+---
+
+<!-- _class: columns-3 h2-center -->
+
+# columns-3 h2-center
+
+## Titulo 
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+
+
+---
+
+<!-- _class: columns-3-grid -->
+# columns-3-grid 
+
+## Titulo 
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+---
+
+<!-- _class: columns-3-grid h2-center -->
+# columns-3-grid h2-center
+
+## Titulo 
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+---
+
+
+<!-- _class: columns-4 -->
+# columns-4
+
+## Titulo 
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+
+---
+
+<!-- _class: columns-4 h2-center -->
+
+# columns-4 h2-center
+
+## Titulo 
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+
+
+---
+
+<!-- _class: columns-4-grid -->
+# columns-4-grid 
+
+## Titulo 
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+---
+
+<!-- _class: columns-4-grid h2-center -->
+# columns-4-grid h2-center
+
+## Titulo 
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
+
+<div>
+
+- una opcion 
+- dos opciones
+- tres opciones
+- cuatro opciones
+- cinco opciones
+- etc
+</div>
 
 <div>
 
