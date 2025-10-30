@@ -20,14 +20,14 @@ Facultad de Ingeniería**
 
 <div style="position: absolute; left: 93%; top:10px; ">
 
-![width:80](licencia.png)
+![width:80](https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/licencia.png)
 </div>
 
 ---
 
 # Otro elemento
 
-![center small](licencia.png)
+![center small](https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/licencia.png)
 
 ---
 
