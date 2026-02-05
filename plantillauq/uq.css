@@ -18,21 +18,25 @@ section {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 28px;
   line-height: 1.35;
-   /*color: red;          Slate-900 */
+  /*color: red;          Slate-900 */
   background: #ffffff;
-  
+
 }
 
 /* Títulos */
-section h1, section h2, section h3 {
+section h1,
+section h2,
+section h3 {
   font-weight: 800;
   letter-spacing: -0.02em;
- /* color: #0b3d91;           Azul institucional, cámbialo por tu marca */
+  /* color: #0b3d91;           Azul institucional, cámbialo por tu marca */
 }
 
 
-section  h1 {
-  position: absolute; top: 28px; left: 640px; 
+section h1 {
+  position: absolute;
+  top: 28px;
+  left: 640px;
   /* color: black; */
   font-size: 22pt
 }
@@ -45,10 +49,12 @@ section::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 138px; /* ajusta según la altura de tu franja */
+  height: 138px;
+  /* ajusta según la altura de tu franja */
   background-image: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/franjaSuperior.png");
   background-repeat: no-repeat;
-  background-size: contain;    /* <- mantiene proporción */
+  background-size: contain;
+  /* <- mantiene proporción */
   background-position: top center;
   z-index: 1;
 }
@@ -57,18 +63,21 @@ section::before {
 section::after {
   position: absolute;
   inset: auto 0 0 0;
-  height: 78px; /* ajusta según tu franja inferior */
+  height: 78px;
+  /* ajusta según tu franja inferior */
 
   /* Fondo confinado al content box */
   background: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/franjaInferior.png") no-repeat bottom right / contain;
-  background-origin: content-box; /* ← posiciona vs el content box */
-  background-clip: content-box;   /* ← pinta solo dentro del content box */
+  background-origin: content-box;
+  /* ← posiciona vs el content box */
+  background-clip: content-box;
+  /* ← pinta solo dentro del content box */
 
   display: flex;
   align-items: center;
   justify-content: flex-begin;
   padding-left: 15px;
-  
+
 
   z-index: 1;
 }
@@ -80,10 +89,11 @@ section .after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px; /* ajusta según tu franja inferior */
+  height: 80px;
+  /* ajusta según tu franja inferior */
   display: flex;
   align-items: center;
-    
+
   padding: 0 40px;
   background-image: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/franjaInferior.png");
   background-repeat: no-repeat;
@@ -94,18 +104,21 @@ section .after {
 
 
 /* Código */
-pre code { font-size: 0.9em; }
+pre code {
+  font-size: 0.9em;
+}
 
-section > * {
+section>* {
   position: relative;
-  z-index: 2; /* para que el texto quede sobre las franjas */
+  z-index: 2;
+  /* para que el texto quede sobre las franjas */
 }
 
 
 /* ======== PORTADA (clase "lead") ======== */
 section.lead {
   background: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/fondo.png") no-repeat center center / cover;
-  
+
   /* color: #fff; */
   text-align: left;
   padding-top: 0;
@@ -114,14 +127,14 @@ section.lead {
 }
 
 /* Sin franjas en la portada */
-section.lead::before ,
+section.lead::before,
 section.lead::after {
   display: none;
 }
 
 /* Estilo de título principal en portada */
 section.lead h1 {
-  position:absolute;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,24 +151,24 @@ section.lead h1 {
 section.lead h2 {
   font-size: 36px;
   font-weight: 400;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 section.end {
   background: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/gracias.png") no-repeat center center / cover;
   /* color: #fff; */
-  
+
   padding-top: 0;
   padding-bottom: 0;
 }
 
-section.end::before ,
+section.end::before,
 section.end::after {
   display: none;
 }
 
 section.titulo h1 {
-  /* color: black; */ 
+  /* color: black; */
   position: absolute;
   left: 0;
   top: 40%;
@@ -164,26 +177,48 @@ section.titulo h1 {
   display: table-cell;
   text-align: center;
   padding: 30px 0;
-  font-weight: bold; 
+  font-weight: bold;
+}
+
+/* ======== CONTENIDO CENTRADO ======== */
+
+section.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 150px 80px 100px;
+  /* Ajusta el padding para dejar espacio a las franjas */
+}
+
+section.centered h1 {
+  position: static;
+  /* Anula el posicionamiento absoluto del h1 normal */
+  margin-bottom: 0.5em;
 }
 
 /* ======== DOS COLUMNAS ======== */
 
 section.columns-2 {
-  column-count: 2;           /* número de columnas */
-  column-gap: 2em;           /* espacio entre columnas */
+  column-count: 2;
+  /* número de columnas */
+  column-gap: 2em;
+  /* espacio entre columnas */
   text-align: justify;
 }
 
 section.columns-2 h2 {
-  column-span: all;           /* títulos ocupan ancho completo */
+  column-span: all;
+  /* títulos ocupan ancho completo */
 }
 
 
 section.columns-2-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 2em;           /* espacio entre columnas */
+  column-gap: 2em;
+  /* espacio entre columnas */
   text-align: justify;
 }
 
@@ -195,20 +230,24 @@ section.columns-2-grid h2 {
 /* ======== TRES COLUMNAS ======== */
 
 section.columns-3 {
-  column-count: 3;           /* número de columnas */
-  column-gap: 2em;           /* espacio entre columnas */
+  column-count: 3;
+  /* número de columnas */
+  column-gap: 2em;
+  /* espacio entre columnas */
   text-align: justify;
 }
 
 section.columns-3 h2 {
-  column-span: all;           /* títulos ocupan ancho completo */
+  column-span: all;
+  /* títulos ocupan ancho completo */
 }
 
 
 section.columns-3-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2em;           /* espacio entre columnas */
+  column-gap: 2em;
+  /* espacio entre columnas */
   text-align: justify;
 }
 
@@ -220,19 +259,23 @@ section.columns-3-grid h2 {
 /* ======== CUATRO COLUMNAS ======== */
 
 section.columns-4 {
-  column-count: 4;           /* número de columnas */
-  column-gap: 2em;           /* espacio entre columnas */
+  column-count: 4;
+  /* número de columnas */
+  column-gap: 2em;
+  /* espacio entre columnas */
   text-align: justify;
 }
 
 section.columns-4 h2 {
-  column-span: all;           /* títulos ocupan ancho completo */
+  column-span: all;
+  /* títulos ocupan ancho completo */
 }
 
 section.columns-4-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 2em;           /* espacio entre columnas */
+  column-gap: 2em;
+  /* espacio entre columnas */
   text-align: justify;
 }
 
@@ -245,66 +288,125 @@ section.columns-4-grid h2 {
 
 section.columns-flex {
   display: flex;
-  flex-wrap: wrap;           /* clave: permite que el h2 quede solo en la primera fila */
-  flex-direction: row;        /* las columnas se ubican lado a lado */
+  flex-wrap: wrap;
+  /* clave: permite que el h2 quede solo en la primera fila */
+  flex-direction: row;
+  /* las columnas se ubican lado a lado */
   justify-content: space-between;
-  align-items: center;    /* o center si quieres centrar verticalmente */
+  align-items: center;
+  /* o center si quieres centrar verticalmente */
   gap: 2em;
 }
 
 
 /* Asegura que cada columna use la mitad del ancho */
-section.columns-flex > div {
-  flex: 1;                    /* las dos columnas crecen igual */
-  min-width: 0;               /* evita overflow horizontal */
+section.columns-flex>div {
+  flex: 1;
+  /* las dos columnas crecen igual */
+  min-width: 0;
+  /* evita overflow horizontal */
 }
 
-section.columns-flex > h2 {
-  flex: 0 0 100%;            /* ocupa toda la fila */
+section.columns-flex>h2 {
+  flex: 0 0 100%;
+  /* ocupa toda la fila */
   margin: 0 0 .5em;
 }
 
-section[class*="h1-center"] > h1,
-section[class*="h2-center"] > h2,
-section[class*="h3-center"] > h3,
-section[class*="h4-center"] > h4,
-section[class*="h5-center"] > h5,
-section[class*="h6-center"] > h6 {
+section[class*="h1-center"]>h1,
+section[class*="h2-center"]>h2,
+section[class*="h3-center"]>h3,
+section[class*="h4-center"]>h4,
+section[class*="h5-center"]>h5,
+section[class*="h6-center"]>h6 {
   text-align: center;
 }
 
-section[class*="h1-left"] > h1,
-section[class*="h2-left"] > h2,
-section[class*="h3-left"] > h3,
-section[class*="h4-left"] > h4,
-section[class*="h5-left"] > h5,
-section[class*="h6-left"] > h6 {
+section[class*="h1-left"]>h1,
+section[class*="h2-left"]>h2,
+section[class*="h3-left"]>h3,
+section[class*="h4-left"]>h4,
+section[class*="h5-left"]>h5,
+section[class*="h6-left"]>h6 {
   text-align: left;
 }
 
-section[class*="h1-right"] > h1,
-section[class*="h2-right"] > h2,
-section[class*="h3-right"] > h3,
-section[class*="h4-right"] > h4,
-section[class*="h5-right"] > h5,
-section[class*="h6-right"] > h6 {
+section[class*="h1-right"]>h1,
+section[class*="h2-right"]>h2,
+section[class*="h3-right"]>h3,
+section[class*="h4-right"]>h4,
+section[class*="h5-right"]>h5,
+section[class*="h6-right"]>h6 {
   text-align: right;
 }
 
-img[alt~="center"] { display: block; margin: 0 auto; }
-img.center { display: block; margin: 0 auto; }
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
 
-img[alt~="small"] { max-width: 40%; height: auto; }
-img.small { max-width: 40%; height: auto; }
-img[alt~="medium"] { max-width: 60%; height: auto; }
-img.medium { max-width: 60%; height: auto; }
-img[alt~="large"] { max-width: 80%; height: auto; }
-img.large { max-width: 80%; height: auto; }
-img[alt~="border"] { border: 2px solid #333; padding: 5px; }
-img.border { border: 2px solid #333; padding: 5px; }
-img[alt~="shadow"] { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-img.shadow { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-img[alt~="rounded"] { border-radius: 15px; }
-img.rounded { border-radius: 15px; }
+img.center {
+  display: block;
+  margin: 0 auto;
+}
 
-img[alt~="licencia"], img.licencia { content: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/licencia.png"); }
+img[alt~="small"] {
+  max-width: 40%;
+  height: auto;
+}
+
+img.small {
+  max-width: 40%;
+  height: auto;
+}
+
+img[alt~="medium"] {
+  max-width: 60%;
+  height: auto;
+}
+
+img.medium {
+  max-width: 60%;
+  height: auto;
+}
+
+img[alt~="large"] {
+  max-width: 80%;
+  height: auto;
+}
+
+img.large {
+  max-width: 80%;
+  height: auto;
+}
+
+img[alt~="border"] {
+  border: 2px solid #333;
+  padding: 5px;
+}
+
+img.border {
+  border: 2px solid #333;
+  padding: 5px;
+}
+
+img[alt~="shadow"] {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img[alt~="rounded"] {
+  border-radius: 15px;
+}
+
+img.rounded {
+  border-radius: 15px;
+}
+
+img[alt~="licencia"],
+img.licencia {
+  content: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/licencia.png");
+}
