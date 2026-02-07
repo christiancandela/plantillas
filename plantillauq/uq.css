@@ -192,9 +192,8 @@ section.centered {
   /* Ajusta el padding para dejar espacio a las franjas */
 }
 
-section.centered h1 {
+section.centered h2 {
   position: static;
-  /* Anula el posicionamiento absoluto del h1 normal */
   margin-bottom: 0.5em;
 }
 
