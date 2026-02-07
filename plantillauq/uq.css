@@ -316,70 +316,70 @@ section.columns-flex>h2 {
 /* Estas clases permiten dividir divs en columnas dentro de una sección */
 
 /* --- Dos columnas para divs --- */
-div.div-columns-2 {
+div.columns-2 {
   column-count: 2;
   column-gap: 2em;
   text-align: justify;
 }
 
-div.div-columns-2-grid {
+div.columns-2-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2em;
 }
 
-div.div-columns-2-flex {
+div.columns-2-flex {
   display: flex;
   gap: 2em;
 }
 
-div.div-columns-2-flex>* {
+div.columns-2-flex>* {
   flex: 1;
   min-width: 0;
 }
 
 /* --- Tres columnas para divs --- */
-div.div-columns-3 {
+div.columns-3 {
   column-count: 3;
   column-gap: 2em;
   text-align: justify;
 }
 
-div.div-columns-3-grid {
+div.columns-3-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
 }
 
-div.div-columns-3-flex {
+div.columns-3-flex {
   display: flex;
   gap: 2em;
 }
 
-div.div-columns-3-flex>* {
+div.columns-3-flex>* {
   flex: 1;
   min-width: 0;
 }
 
 /* --- Cuatro columnas para divs --- */
-div.div-columns-4 {
+div.columns-4 {
   column-count: 4;
   column-gap: 2em;
   text-align: justify;
 }
 
-div.div-columns-4-grid {
+div.columns-4-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2em;
 }
 
-div.div-columns-4-flex {
+div.columns-4-flex {
   display: flex;
   gap: 2em;
 }
 
-div.div-columns-4-flex>* {
+div.columns-4-flex>* {
   flex: 1;
   min-width: 0;
 }
