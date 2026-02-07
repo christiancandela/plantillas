@@ -326,11 +326,13 @@ div.columns-2-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2em;
+  align-items: start;
 }
 
 div.columns-2-flex {
   display: flex;
   gap: 2em;
+  align-items: flex-start;
 }
 
 div.columns-2-flex>* {
@@ -349,11 +351,13 @@ div.columns-3-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
+  align-items: start;
 }
 
 div.columns-3-flex {
   display: flex;
   gap: 2em;
+  align-items: flex-start;
 }
 
 div.columns-3-flex>* {
@@ -372,11 +376,13 @@ div.columns-4-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2em;
+  align-items: start;
 }
 
 div.columns-4-flex {
   display: flex;
   gap: 2em;
+  align-items: flex-start;
 }
 
 div.columns-4-flex>* {
