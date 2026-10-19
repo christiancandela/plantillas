@@ -478,6 +478,24 @@ graph TB
 
 ---
 
+# Event Storming: Proceso de Onboarding
+
+<div class="mermaid" style="text-align: center; transform: scale(1.1) translateY(-30px);">
+graph LR
+    C1["🔵 RegistrarEmpleado"]
+    E1["🟠 EmpleadoCreado"]
+    P1["🟣 Política:\ncuando EmpleadoCreado\n→ CrearUsuario"]
+    E2["🟠 UsuarioCreado"]
+    P2["🟣 Política:\ncuando UsuarioCreado\n→ CrearPerfil"]
+    E3["🟠 PerfilCreado"]
+    E4["🟠 BienvenidaEnviada"]
+    E5["🟠 OnboardingCompletado"]
+
+    C1 --> E1 --> P1 --> E2 --> P2 --> E3 --> E4 --> E5
+</div>
+
+---
+
 <!-- _class: end -->
 
 <div style="position:absolute;  left:565px; top: 540px">
