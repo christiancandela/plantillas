@@ -487,3 +487,36 @@ img[alt~="licencia"],
 img.licencia {
   content: url("https://raw.githubusercontent.com/christiancandela/plantillas/main/plantillauq/licencia.png");
 }
+
+/* ======== DIAGRAMAS MERMAID ======== */
+/* tema/render.sh dibuja cada diagrama antes de llamar a Marp y deja el SVG dentro de un
+   <div class="mermaid-svg">. El SVG trae `width: 100%` y no trae altura: la saca de la
+   proporción de su viewBox. De ahí las dos palancas de tamaño, que son distintas a propósito:
+
+   ALTO — `--diagrama-alto`, con 430px por defecto. 720px de diapositiva menos la franja
+   superior (138), la inferior (78) y el título dejan algo menos de 450px útiles, así que el
+   valor por defecto es la red de seguridad: ningún diagrama se sale solo. Solo actúa cuando el
+   diagrama lo excede —los que ya caben no se tocan— y encoge sin deformar, porque el SVG
+   conserva su `preserveAspectRatio`. Para subirlo o bajarlo en un diagrama concreto, redefina
+   la variable en su bloque; las variables CSS heredan, así que desde el <div> alcanza al <svg>:
+
+     <div class="mermaid" style="text-align: center; --diagrama-alto: 550px;">
+
+   ANCHO — `max-width` en el bloque, a secas. El SVG llena el ancho de su contenedor, de modo
+   que limitarlo lo encoge en proporción. Se usa para hacerle sitio a lo que comparte la
+   diapositiva (un texto debajo, una tabla, una segunda columna):
+
+     <div class="mermaid" style="text-align: center; max-width: 520px; margin: 0 auto;">
+
+   Solo surte efecto si es menor que el ancho natural del diagrama. No hay variable para el
+   ancho porque mmdc escribe el `max-width` natural en el propio <svg>, y un estilo inline gana
+   a cualquier regla de esta hoja.
+
+   Las dos se pueden combinar: manda la que más restrinja. */
+section .mermaid-svg {
+  --diagrama-alto: 430px;
+}
+
+section .mermaid-svg svg {
+  max-height: var(--diagrama-alto);
+}

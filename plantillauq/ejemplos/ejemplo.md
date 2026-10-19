@@ -434,6 +434,50 @@ Facultad de Ingeniería**
 
 ---
 
+# Stack de Observabilidad Completo
+
+<div class="mermaid" style="text-align: center; max-width: 400px; margin: 0 auto;">
+graph TB
+    subgraph SERVICIOS["Microservicios"]
+        EMP["👥 empleados\n/metrics + logs + trazas"]
+        DEP["🏢 departamentos\n/metrics + logs + trazas"]
+        AUTH["🔐 auth\n/metrics + logs + trazas"]
+    end
+    PROM["📊 Prometheus\nMétricas (Pull)"] -->|Scraping| SERVICIOS
+    LOKI["🗂️ Loki\nLogs (Push)"]
+    PROMTAIL["📋 Promtail"] -->|Recolecta| SERVICIOS
+    PROMTAIL -->|Push| LOKI
+    ZIPKIN["🔍 Zipkin / Jaeger\nTrazas (Push)"]
+    SERVICIOS -->|OTel SDK| ZIPKIN
+    GRAFANA["📈 Grafana\nVisualiza y alerta"] -->|PromQL| PROM
+    GRAFANA -->|LogQL| LOKI
+    GRAFANA -->|Alerta| NOTIF["🔔 Discord / Telegram"]
+</div>
+
+---
+
+# Stack de Observabilidad Completo
+
+<div class="mermaid" style="text-align: center; --diagrama-alto: 500px;">
+graph TB
+    subgraph SERVICIOS["Microservicios"]
+        EMP["👥 empleados\n/metrics + logs + trazas"]
+        DEP["🏢 departamentos\n/metrics + logs + trazas"]
+        AUTH["🔐 auth\n/metrics + logs + trazas"]
+    end
+    PROM["📊 Prometheus\nMétricas (Pull)"] -->|Scraping| SERVICIOS
+    LOKI["🗂️ Loki\nLogs (Push)"]
+    PROMTAIL["📋 Promtail"] -->|Recolecta| SERVICIOS
+    PROMTAIL -->|Push| LOKI
+    ZIPKIN["🔍 Zipkin / Jaeger\nTrazas (Push)"]
+    SERVICIOS -->|OTel SDK| ZIPKIN
+    GRAFANA["📈 Grafana\nVisualiza y alerta"] -->|PromQL| PROM
+    GRAFANA -->|LogQL| LOKI
+    GRAFANA -->|Alerta| NOTIF["🔔 Discord / Telegram"]
+</div>
+
+---
+
 <!-- _class: end -->
 
 <div style="position:absolute;  left:565px; top: 540px">
